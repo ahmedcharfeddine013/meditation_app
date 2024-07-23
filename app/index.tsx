@@ -1,18 +1,17 @@
-import { Image, View, Text, StyleSheet } from 'react-native'
+import { View, Text, ImageBackground } from "react-native";
 
-export default function HomeScreen() {
-    return (
-        <View className='flex-1 items-center justify-center'>
-            <Text>Home Screen</Text>
-        </View>
-    )
+import beachImage from "@/assets/meditation-images/beach.webp";
+
+export default function App() {
+  return (
+    <View className="flex-1">
+      <ImageBackground
+        source={beachImage}
+        resizeMode="cover"
+        className="flex-1"
+      >
+        <Text>Home Screen</Text>
+      </ImageBackground>
+    </View>
+  );
 }
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center'
-    }
-})
-
