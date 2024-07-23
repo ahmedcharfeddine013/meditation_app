@@ -2,7 +2,7 @@ import { Image, View, Text, StyleSheet } from 'react-native'
 
 export default function HomeScreen() {
     return (
-        <View style={styles.container}>
+        <View className='flex-1 items-center justify-center'>
             <Text>Home Screen</Text>
         </View>
     )
